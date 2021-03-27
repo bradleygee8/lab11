@@ -3,8 +3,8 @@ Description=This is the timer that will make weather.service go off every hour
 
 [Timer]
 Unit=weather.service
-OnBootSec=30s
-OnUnitActiveSec=60min
+OnBootSec=0s
+OnUnitActiveSec=3600
 
 [Install]
 WantedBy=timers.target
