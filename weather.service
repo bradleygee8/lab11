@@ -1,0 +1,11 @@
+[Unit]
+Description=This tells you the weather in the current location
+
+[Service]
+Type=simple
+ExecStart=/home/vagrant/week11/bin/weather
+WorkingDirectory=/home/vagrant/week11/bin
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

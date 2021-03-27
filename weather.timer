@@ -1,0 +1,10 @@
+[Unit]
+Description=This is the timer that will make weather.service go off every hour
+
+[Timer]
+Unit=weather.service
+OnBootSec=30s
+OnUnitActiveSec=60min
+
+[Install]
+WantedBy=timers.target
