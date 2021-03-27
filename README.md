@@ -9,3 +9,8 @@ The weather script will refresh every 60 mins, using your IP address to determin
         - "sudo cp weather.service /etc/systemd/system"
         -  "sudo cp weather.timer /etc/systemd/system"
 5. Using the following command will reload those files "sudo systemctl daemon-reload"
+6. To start the service run "sudo systemctl start weather.service"
+7. To check the status run "sudo systemctl status weather.service"
+8. To stop the service run "sudo systemctl stop weather.service"
+9. The file will be saved on your Home directory named "motd"
+10. to open "motd" use "cat motd"
